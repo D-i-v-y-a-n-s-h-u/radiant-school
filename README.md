@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Radiant International School — Website
 
-## Getting Started
+A premium marketing site for a CBSE international school, built with:
 
-First, run the development server:
+- **Next.js 16** (App Router)
+- **React 19**
+- **Tailwind CSS v4** (CSS-first `@theme` config, no `tailwind.config.js` needed)
+- Plain **JavaScript** (no TypeScript)
+- **next-themes** for light/dark mode
+- Zero external UI/animation libraries — all motion is CSS + `IntersectionObserver`
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+> Note: the first run needs internet access once so Next.js can fetch the
+> Fraunces & Inter font files from Google Fonts (`next/font/google`). After
+> that they're cached locally and self-hosted by Next.js — no runtime
+> requests to Google are made in the browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+app/
+  layout.js         Root layout, fonts, metadata
+  page.js            Composes every section for the homepage
+  providers.js        next-themes ThemeProvider wrapper
+  globals.css         Design tokens (@theme), keyframes, utility classes
+components/
+  Navbar.jsx           Sticky glass navbar, mobile drawer, ERP login
+  Hero.jsx             Full-bleed hero, floating gradients, wave divider
+  TrustBar.jsx         Animated stat counters + accreditation marquee
+  About.jsx            School narrative + highlight list
+  WhyChooseUs.jsx      6 premium feature cards
+  Academics.jsx        Tabbed curriculum stages (Early Years → Senior)
+  Facilities.jsx       Image grid of campus facilities
+  Gallery.jsx          Masonry gallery with lightbox preview
+  Testimonials.jsx     Rotating parent/student/alumni quotes
+  Admissions.jsx       4-step process + enquiry form
+  Contact.jsx          Contact details + stylised map card
+  Footer.jsx           Links, newsletter signup, socials
+  ThemeToggle.jsx      Light/dark switch (sun/moon slider)
+hooks/
+  useReveal.js         IntersectionObserver-driven scroll-reveal hook
+public/images/
+  *.svg                Locally generated placeholder artwork
+                        (hero, about, gallery, facilities) — swap these
+                        for real photography whenever it's ready.
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Design system
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Color:** amber `#d97706` primary on a pure white light mode; a
+  purpose-built dark mode (`#09090B` background, `#18181B` cards) — not an
+  inverted palette.
+- **Type:** Fraunces (display/serif, used sparingly for headings and the
+  crest wordmark) paired with Inter (body/UI).
+- **Motion:** CSS keyframes (`fade-up`, `slide-left/right`, `scale-in`,
+  `float`, `glow`) triggered by the `useReveal` hook watching
+  `data-reveal` attributes — no Framer Motion / GSAP.
+- **Signature element:** the shield "RIS" crest monogram, reused across the
+  navbar and footer as the brand's heritage mark.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Swapping in real photography
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All imagery lives in `public/images/` as lightweight SVG placeholders so the
+project needs zero external image hosts. To use real photos, drop JPG/PNG/WebP
+files into `public/images/` and update the `src` paths in `Hero.jsx`,
+`About.jsx`, `Facilities.jsx`, and `Gallery.jsx`.

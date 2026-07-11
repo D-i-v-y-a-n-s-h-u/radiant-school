@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(135)">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect width="1200" height="900" fill="url(#grid)"/>
+  
+<path d="M0 500 L1200 500 L1200 900 L0 900 Z" fill="#fff7e6"/>
+<g fill="#d97706">
+  <rect x="80" y="360" width="1040" height="200" rx="16"/>
+  <rect x="80" y="560" width="1040" height="18"/>
+</g>
+<g fill="#fffbeb">
+  <rect x="140" y="410" width="80" height="110" rx="6"/>
+  <rect x="250" y="410" width="80" height="110" rx="6"/>
+  <rect x="360" y="410" width="80" height="110" rx="6"/>
+  <rect x="470" y="410" width="80" height="110" rx="6"/>
+  <rect x="650" y="410" width="80" height="110" rx="6"/>
+  <rect x="760" y="410" width="80" height="110" rx="6"/>
+  <rect x="870" y="410" width="80" height="110" rx="6"/>
+  <rect x="960" y="410" width="80" height="110" rx="6"/>
+</g>
+<rect x="560" y="380" width="80" height="180" fill="#92400e" rx="8"/>
+<polygon points="60,360 600,220 1140,360" fill="#92400e"/>
+<circle cx="600" cy="150" r="4" fill="#92400e"/>
+<line x1="600" y1="150" x2="600" y2="220" stroke="#92400e" stroke-width="4"/>
+<polygon points="600,150 660,175 600,200 540,175" fill="#b45309"/>
+<g fill="#166534" opacity="0.85">
+  <circle cx="150" cy="560" r="42"/>
+  <circle cx="1050" cy="560" r="50"/>
+  <ellipse cx="150" cy="610" rx="10" ry="40" fill="#7c4a12"/>
+  <ellipse cx="1050" cy="620" rx="12" ry="46" fill="#7c4a12"/>
+</g>
+
+</svg>
