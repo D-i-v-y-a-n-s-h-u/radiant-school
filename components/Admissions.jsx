@@ -26,7 +26,7 @@ export default function Admissions() {
         <div data-reveal="left">
           <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">Admissions 2026&ndash;27</p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-ink-950 dark:text-white">
-            Four Simple Steps to <span className="text-gradient-amber italic">Join Us</span>
+            Four Simple Steps to <span className="text-gradient-amber ">Join Us</span>
           </h2>
           <p className="mt-5 text-ink-950/60 dark:text-ink-300 leading-relaxed">
             Limited seats are available across Pre-KG to Grade 10 for the upcoming academic year. Our admissions desk is happy to guide you through every step.

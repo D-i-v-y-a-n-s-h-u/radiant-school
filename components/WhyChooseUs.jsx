@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
         <div className="max-w-2xl mx-auto text-center" data-reveal="up">
           <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">Why Families Choose Us</p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-ink-950 dark:text-white">
-            Built Around What Truly <span className="text-gradient-amber italic">Matters</span>
+            Built Around What Truly <span className="text-gradient-amber ">Matters</span>
           </h2>
           <p className="mt-5 text-ink-950/60 dark:text-ink-300 text-lg">
             Every decision on our campus — from classroom design to club schedules — is made with one question in mind: does this help a child thrive?

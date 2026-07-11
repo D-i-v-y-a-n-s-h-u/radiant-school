@@ -26,7 +26,7 @@ export default function Facilities() {
         <div className="max-w-2xl" data-reveal="up">
           <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">Campus Facilities</p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-ink-950 dark:text-white">
-            Infrastructure Built for <span className="text-gradient-amber italic">Every Ambition</span>
+            Infrastructure Built for <span className="text-gradient-amber ">Every Ambition</span>
           </h2>
         </div>
 

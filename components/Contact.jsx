@@ -43,7 +43,7 @@ export default function Contact() {
         <div className="lg:col-span-2" data-reveal="left">
           <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">Get in Touch</p>
           <h2 className="mt-4 font-display text-4xl font-semibold text-ink-950 dark:text-white">
-            We'd Love to <span className="text-gradient-amber italic">Hear From You</span>
+            We'd Love to <span className="text-gradient-amber ">Hear From You</span>
           </h2>
           <p className="mt-5 text-ink-950/60 dark:text-ink-300 leading-relaxed">
             Whether it's a question about admissions or a campus visit request, our team responds within one business day.

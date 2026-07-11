@@ -35,7 +35,7 @@ export default function Hero() {
             className="mt-7 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] font-semibold text-white animate-fade-up"
             style={{ animationDelay: "0.25s", opacity: 0 }}
           >
-            Where <span className="text-gradient-amber italic">Curiosity</span>
+            Where <span className="text-gradient-amber ">Curiosity</span>
             <br /> Grows Into Character
           </h1>
 

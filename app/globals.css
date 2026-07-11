@@ -13,8 +13,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: var(--font-fraunces), "Georgia", serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 
   --color-amber-50: #fffbeb;
   --color-amber-100: #fef3c7;

@@ -45,7 +45,7 @@ export default function Academics() {
         <div className="max-w-2xl" data-reveal="up">
           <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">Academic Journey</p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-ink-950 dark:text-white">
-            A Curriculum That <span className="text-gradient-amber italic">Grows With Your Child</span>
+            A Curriculum That <span className="text-gradient-amber ">Grows With Your Child</span>
           </h2>
         </div>
 

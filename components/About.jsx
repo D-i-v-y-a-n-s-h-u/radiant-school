@@ -49,7 +49,7 @@ export default function About() {
         <div data-reveal="right">
           <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">About Our School</p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-ink-950 dark:text-white leading-tight">
-            A Legacy of Nurturing <span className="text-gradient-amber italic">Tomorrow's Leaders</span>
+            A Legacy of Nurturing <span className="text-gradient-amber ">Tomorrow's Leaders</span>
           </h2>
           <p className="mt-6 text-ink-950/70 dark:text-ink-300 leading-relaxed text-lg">
             Since 1998, Radiant International School has stood as a beacon of

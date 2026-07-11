@@ -54,7 +54,7 @@ export default function Testimonials() {
       <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center" data-reveal="up">
         <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">Voices of Radiant</p>
         <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-ink-950 dark:text-white">
-          Trusted by <span className="text-gradient-amber italic">Families Like Yours</span>
+          Trusted by <span className="text-gradient-amber ">Families Like Yours</span>
         </h2>
 
         <div key={index} className="mt-14 card-premium rounded-[2rem] p-10 sm:p-14 animate-fade-up">
