@@ -15,7 +15,7 @@ export default function FacilityCard({ facility }) {
         w-[260px] sm:w-[300px] md:w-[340px] lg:w-[360px]
         mx-3 md:mx-4
         rounded-2xl overflow-hidden
-        bg-white
+        bg-white dark:bg-ink-950
         shadow-[0_2px_10px_rgba(0,0,0,0.06)]
         hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
         transition-all duration-300 ease-out
@@ -23,7 +23,7 @@ export default function FacilityCard({ facility }) {
       "
     >
       {/* Image */}
-      <div className="relative w-full h-44 sm:h-52 md:h-60 overflow-hidden bg-gray-100">
+      <div className="relative w-full h-44 sm:h-52 md:h-60 overflow-hidden bg-gray-100 dark:bg-ink-900">
         <Image
           src={facility.image}
           alt={facility.title}
@@ -46,10 +46,10 @@ export default function FacilityCard({ facility }) {
 
       {/* Text content */}
       <div className="p-5 md:p-6">
-        <h3 className="text-lg md:text-xl font-semibold text-gray-900 tracking-tight mb-1.5">
+        <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white tracking-tight mb-1.5">
           {facility.title}
         </h3>
-        <p className="text-sm md:text-[15px] text-gray-500 leading-relaxed line-clamp-3">
+        <p className="text-sm md:text-[15px] text-gray-500 dark:text-gray-300 leading-relaxed line-clamp-3">
           {facility.description}
         </p>
       </div>

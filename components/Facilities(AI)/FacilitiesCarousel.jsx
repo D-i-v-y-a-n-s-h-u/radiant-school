@@ -146,13 +146,13 @@ export default function FacilitiesCarousel() {
   useEffect(() => () => clearResumeTimeout(), []);
 
   return (
-    <section className="w-full py-14 md:py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="w-full py-14 md:py-20 bg-gradient-to-b from-gray-50 to-white dark:from-ink-900 dark:to-ink-950 overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-10 md:mb-14 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-          Our Facilities
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+          Campus Facilities
         </h2>
-        <p className="mt-3 text-gray-500 text-base md:text-lg max-w-2xl mx-auto">
-          Explore the world-class amenities designed for your comfort and
+        <p className="mt-3 text-gray-500 dark:text-gray-300 text-base md:text-lg max-w-2xl mx-auto">
+          Explore our amenities designed for your comfort and
           convenience.
         </p>
       </div>
@@ -176,8 +176,8 @@ export default function FacilitiesCarousel() {
         </div>
 
         {/* Edge fade masks so cards don't feel like they're cut off */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-10 sm:w-16 md:w-24 bg-gradient-to-r from-gray-50 md:from-white to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-10 sm:w-16 md:w-24 bg-gradient-to-l from-gray-50 md:from-white to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-10 sm:w-16 md:w-24 bg-gradient-to-r from-gray-50 md:from-white dark:from-ink-900 dark:md:from-ink-950 to-transparent transition-colors duration-300" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-10 sm:w-16 md:w-24 bg-gradient-to-l from-gray-50 md:from-white dark:from-ink-900 dark:md:from-ink-950 to-transparent transition-colors duration-300" />
       </div>
     </section>
   );

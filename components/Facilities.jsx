@@ -1,6 +1,7 @@
 "use client";
 
 import useReveal from "@/hooks/useReveal";
+import FacilitiesCarousel from "./Facilities(AI)/FacilitiesCarousel";
 
 const FACILITIES = [
   { title: "Central Library", img: "/facilities/LIBRARY.jpg", desc: "A quiet, well-lit space with an extensive collection of books, journals, and digital resources.", },
@@ -29,26 +30,8 @@ export default function Facilities() {
           </h2>
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
-          {FACILITIES.map((f, i) => (
-            <div
-              key={f.title}
-              data-reveal="scale"
-              data-reveal-delay={i * 90}
-              className="group relative rounded-3xl overflow-hidden shadow-lg shadow-ink-950/5 hover:shadow-2xl hover:shadow-amber-600/20 transition-all duration-500 hover:-translate-y-2"
-            >
-              <img
-                src={f.img}
-                alt={f.title}
-                className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-              <div className="absolute bottom-0 p-6">
-                <h3 className="font-display text-xl font-semibold text-white">{f.title}</h3>
-                <p className="mt-1 text-sm text-white/75 max-w-xs">{f.desc}</p>
-              </div>
-            </div>
-          ))}
+        <div className="mt-14">
+              <FacilitiesCarousel />
         </div>
       </div>
     </section>
