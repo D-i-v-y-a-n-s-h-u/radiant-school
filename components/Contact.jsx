@@ -5,28 +5,28 @@ import useReveal from "@/hooks/useReveal";
 const DETAILS = [
   {
     label: "Campus Address",
-    value: "Radiant International School, NH-2 Bypass Road, Dinapore, Bihar 801503",
+    value: "Khagaul Road, Khagaul, Patna, Bihar - 801105",
     icon: (
       <path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z M12 13a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" strokeWidth="1.6" fill="none" />
     ),
   },
   {
     label: "Admissions Helpline",
-    value: "+91 98765 43210",
+    value: "+91 9334488601, +91 7281977779",
     icon: (
       <path d="M22 16.9v3a2 2 0 01-2.2 2A19.8 19.8 0 013 5.2 2 2 0 015 3h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.4 2.1L9 10.9a16 16 0 006 6l1.5-1.2a2 2 0 012.1-.4c.8.3 1.7.5 2.6.6a2 2 0 011.8 2z" stroke="currentColor" strokeWidth="1.6" fill="none" />
     ),
   },
   {
     label: "Email Address",
-    value: "admissions@radiantschool.edu.in",
+    value: "radiantschool14@gmail.com",
     icon: (
       <path d="M3 6h18v12H3z M3 7l9 6 9-6" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinejoin="round" />
     ),
   },
   {
     label: "Office Hours",
-    value: "Mon &ndash; Sat, 8:00 AM &ndash; 4:00 PM",
+    value: "Monday &ndash; Saturday, 8:00 AM &ndash; 4:00 PM",
     icon: (
       <path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 3" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" />
     ),
@@ -86,10 +86,12 @@ export default function Contact() {
                 Find Us on the Map
               </p>
               <p className="mt-2 text-sm text-ink-950/60 dark:text-ink-300 max-w-xs mx-auto">
-                NH-2 Bypass Road, Dinapore, Bihar — 12 mins from Danapur Railway Station.
+                Khagaul Road, Khagaul, Patna, Bihar – 801105
               </p>
               <a
-                href="#contact"
+                href="https://maps.google.com/?q=Radiant+International+School+Khagaul+Patna"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-5 inline-block rounded-full border border-amber-600 text-amber-600 dark:text-amber-400 dark:border-amber-400 px-5 py-2.5 text-sm font-semibold hover:bg-amber-600 hover:text-white transition-colors duration-300"
               >
                 Get Directions

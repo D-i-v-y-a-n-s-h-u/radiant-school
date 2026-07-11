@@ -3,12 +3,17 @@
 import useReveal from "@/hooks/useReveal";
 
 const FACILITIES = [
-  { title: "Central Library", img: "/images/facility-library.svg", desc: "20,000+ titles, reading nooks & digital archives." },
-  { title: "Science Labs", img: "/images/facility-lab.svg", desc: "Fully-equipped Physics, Chemistry & Biology labs." },
-  { title: "Sports Complex", img: "/images/facility-sports.svg", desc: "Athletics track, football turf, pool & indoor courts." },
-  { title: "Auditorium", img: "/images/facility-auditorium.svg", desc: "800-seat, acoustically-designed performance hall." },
-  { title: "Safe Transport", img: "/images/facility-transport.svg", desc: "GPS & RFID-enabled fleet with trained attendants." },
-  { title: "Smart Classrooms", img: "/images/facility-smartclass.svg", desc: "Interactive boards across every learning space." },
+  { title: "Central Library", img: "/facilities/LIBRARY.jpg", desc: "A quiet, well-lit space with an extensive collection of books, journals, and digital resources.", },
+  { title: "Maths Lab", img: "/facilities/MATH LAB.jpg", desc: "Interactive learning with models, puzzles, and hands-on mathematical exploration." },
+  { title: "Maths Lab", img: "/facilities/MATHS LAB 1.jpg", desc: "Interactive learning with models, puzzles, and hands-on mathematical exploration." },
+  { title: "Science Lab", img: "/facilities/COMPOSITE LAB.jpg", desc: "Fully-equipped Physics, Chemistry & Biology labs.", },
+  { title: "Computer Lab", img: "/facilities/COMPUTER LAB.jpg", desc: "High-speed workstations with the latest software, supported by dedicated technical staff.", },
+  { title: "Computer Lab", img: "/facilities/COMPUTER LAB 1.jpg", desc: "High-speed workstations with the latest software, supported by dedicated technical staff." },
+  { title: "Atal Lab", img: "/facilities/ATAL LAB.jpg", desc: "Innovation hub for robotics, coding, AI, electronics & hands-on STEM learning." },
+  { title: "Sports Complex", img: "/facilities/PLAYGROUND.jpg", desc: "A multi-purpose court for basketball, badminton, volleyball & indoor courts." },
+  { title: "Sports Complex", img: "/facilities/PLAYGROUND 1.jpg", desc: "A multi-purpose court for basketball, badminton, volleyball & indoor courts." },
+  { title: "Auditorium", img: "/facilities/AUDITORIUM.jpg", desc: "A large auditorium ideal for events, conferences, and performances." },
+  { title: "Auditorium", img: "/facilities/AUDITORIUM 1.jpg", desc: "A large auditorium ideal for events, conferences, and performances." },
 ];
 
 export default function Facilities() {
