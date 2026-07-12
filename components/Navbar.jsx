@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
@@ -16,39 +17,6 @@ const LINKS = [
  * Crest — the signature brand mark: a shield monogram with the school's
  * initials, echoing the heritage/prestige positioning of the site.
  */
-function Crest({ className = "h-9 w-9" }) {
-  return (
-    <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
-      <defs>
-        <linearGradient id="crestGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#f59e0b" />
-          <stop offset="100%" stopColor="#b45309" />
-        </linearGradient>
-      </defs>
-      <path
-        d="M24 2 L44 9 V22 C44 33 36 42 24 46 C12 42 4 33 4 22 V9 Z"
-        fill="url(#crestGrad)"
-      />
-      <path
-        d="M24 5 L41 11 V22 C41 31.5 34.2 39.3 24 43 C13.8 39.3 7 31.5 7 22 V11 Z"
-        fill="none"
-        stroke="rgba(255,255,255,0.35)"
-        strokeWidth="1"
-      />
-      <text
-        x="24"
-        y="29"
-        textAnchor="middle"
-        fontFamily="var(--font-fraunces), serif"
-        fontSize="17"
-        fontWeight="600"
-        fill="#fff"
-      >
-        RIS
-      </text>
-    </svg>
-  );
-}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -80,21 +48,29 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
         {/* Brand */}
         <a href="#top" className="flex items-center gap-3 group">
-          <Crest />
+          <div className="relative h-11 w-11 lg:h-12 lg:w-12 flex-shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Radiant International School Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
           <div className="leading-tight">
             <p
               className={`font-display font-semibold text-lg tracking-tight transition-colors ${
                 scrolled ? "text-ink-950 dark:text-white" : "text-white"
               }`}
             >
-              Radiant <span className="text-amber-500">International</span>
+              Radiant International School
             </p>
             <p
               className={`text-[10px] uppercase tracking-[0.25em] transition-colors ${
-                scrolled ? "text-ink-950/50 dark:text-ink-300/70" : "text-white/70"
+                scrolled ? "text-ink-950/75 dark:text-ink-300" : "text-white/90"
               }`}
             >
-              School of Excellence
+              2 Decades of Excellence in Education 
             </p>
           </div>
         </a>
