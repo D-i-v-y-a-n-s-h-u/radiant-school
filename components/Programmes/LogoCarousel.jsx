@@ -1,48 +1,67 @@
-// components/Programmes/LogoCarousel.jsx
 "use client";
 
+import { useEffect, useState } from "react";
 import LogoCard from "./LogoCard";
 
-/**
- * LogoCarousel
- * Continuous, infinite marquee of LogoCards — same animation philosophy as the
- * Gallery / Facilities marquees elsewhere on the site.
- *
- * How the seamless loop works:
- * - The list is rendered twice back to back inside a flex track.
- * - The track animates from translateX(0) to translateX(-50%).
- * - Because the second copy is an exact duplicate of the first, the moment the
- *   track finishes translating by 50% it looks identical to the start frame,
- *   so the loop can restart with zero visible jump.
- *
- * Pause on hover / touch is handled purely with CSS (group-hover), so there is
- * no JS animation loop, no jank, and no external dependency.
- */
 export default function LogoCarousel({ items }) {
+  const [activeLogo, setActiveLogo] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (paused) return;
+
+    const interval = setInterval(() => {
+      setActiveLogo((prev) => (prev + 1) % items.length);
+    }, 1200);
+
+    return () => clearInterval(interval);
+  }, [paused, items.length]);
+
   return (
     <div
-      className="
-        group relative w-full overflow-hidden
-        [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]
-      "
-    >
+  className="
+    group
+    relative
+    w-full
+    overflow-x-auto
+    overflow-y-hidden
+    cursor-grab
+    active:cursor-grabbing
+    touch-pan-x
+    select-none
+    [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]
+  "
+>
       <div
         className="
-          marquee-track flex w-max items-center gap-6
+          marquee-track flex w-max items-center gap-8
           [animation-play-state:running]
           group-hover:[animation-play-state:paused]
           group-active:[animation-play-state:paused]
         "
       >
-        {items.map((item) => (
-          <LogoCard key={`a-${item.id}`} name={item.name} image={item.image} />
+        {/* First copy */}
+        {items.map((item, index) => (
+          <LogoCard
+            key={`a-${item.id}`}
+            name={item.name}
+            image={item.image}
+            active={index === activeLogo}
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          />
         ))}
-        {items.map((item) => (
+
+        {/* Duplicate copy for infinite loop */}
+        {items.map((item, index) => (
           <LogoCard
             key={`b-${item.id}`}
             name={item.name}
             image={item.image}
+            active={index === activeLogo}
             aria-hidden="true"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
           />
         ))}
       </div>
