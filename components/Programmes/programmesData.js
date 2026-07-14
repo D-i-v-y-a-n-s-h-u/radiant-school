@@ -6,43 +6,73 @@
 const programmesData = [
   {
     id: "prog-01",
-    name: "STEM Robotics Lab",
-    image: "https://placehold.co/240x120/png?text=STEM+Robotics",
+    name: "NCC",
+    image: "/logo/programmes-initiatives/1.jpg",
   },
   {
     id: "prog-02",
-    name: "Young Leaders Programme",
-    image: "https://placehold.co/240x120/png?text=Young+Leaders",
+    name: "ATL",
+    image: "/logo/programmes-initiatives/2.jpg",
   },
   {
     id: "prog-03",
-    name: "Global Language Immersion",
-    image: "https://placehold.co/240x120/png?text=Language+Immersion",
+    name: "SDGS",
+    image: "/logo/programmes-initiatives/3.jpg",
   },
   {
     id: "prog-04",
-    name: "Creative Arts Studio",
-    image: "https://placehold.co/240x120/png?text=Creative+Arts",
+    name: "CAMPUS RADIO",
+    image: "/logo/programmes-initiatives/4.jpg",
   },
   {
     id: "prog-05",
-    name: "Sports Excellence Academy",
-    image: "https://placehold.co/240x120/png?text=Sports+Academy",
+    name: "CAREER CELL",
+    image: "/logo/programmes-initiatives/5.jpg",
   },
   {
     id: "prog-06",
-    name: "Environmental Stewardship",
-    image: "https://placehold.co/240x120/png?text=Eco+Stewardship",
+    name: "PLOGGING DRIVE",
+    image: "/logo/programmes-initiatives/6.jpg",
   },
   {
     id: "prog-07",
-    name: "Coding & AI Club",
-    image: "https://placehold.co/240x120/png?text=Coding+%26+AI",
+    name: "SPORTS FESTIVAL",
+    image: "/logo/programmes-initiatives/7.jpg",
   },
   {
     id: "prog-08",
-    name: "Community Outreach Initiative",
-    image: "https://placehold.co/240x120/png?text=Community+Outreach",
+    name: "SUMMER CAMP",
+    image: "/logo/programmes-initiatives/8.jpg",
+  },
+  {
+    id: "prog-09",
+    name: "ANNUAL FETE",
+    image: "/logo/programmes-initiatives/9.jpg",
+  },
+  {
+    id: "prog-10",
+    name: "MASTI KI PATSHALA",
+    image: "/logo/programmes-initiatives/10.jpg",
+  },
+  {
+    id: "prog-11",
+    name: "BLOOD DONATION CAMP",
+    image: "/logo/programmes-initiatives/11.jpg",
+  },
+  {
+    id: "prog-12",
+    name: "INTER SCHOOL QUIZ",
+    image: "/logo/programmes-initiatives/12.jpg",
+  },
+  {
+    id: "prog-13",
+    name: "INTER SCHOOL FEST",
+    image: "/logo/programmes-initiatives/13.jpg",
+  },
+  {
+    id: "prog-14",
+    name: "ANNUAL SPORTS",
+    image: "/logo/programmes-initiatives/14.jpg",
   },
 ];
 
