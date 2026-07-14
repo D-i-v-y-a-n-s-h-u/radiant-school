@@ -46,27 +46,6 @@ export default function LogoCarousel({ items }) {
           />
         ))}
       </div>
-
-      <style jsx>{`
-        .marquee-track {
-          animation: marquee-scroll 32s linear infinite;
-        }
-
-        @keyframes marquee-scroll {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          .marquee-track {
-            animation: none;
-          }
-        }
-      `}</style>
     </div>
   );
 }
