@@ -96,7 +96,9 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-4">
           <ThemeToggle />
           <a
-            href="#erp"
+            href="https://radiant.edunexttechnologies.com/Index"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-glow rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white text-sm font-semibold px-5 py-2.5 shadow-lg shadow-amber-600/25 hover:shadow-amber-600/40 hover:-translate-y-0.5 transition-all duration-300"
           >
             ERP Login
@@ -151,7 +153,9 @@ export default function Navbar() {
             <ThemeToggle />
           </div>
           <a
-            href="#erp"
+            href="https://radiant.edunexttechnologies.com/Index"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="mt-6 text-center rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white font-semibold px-5 py-3 shadow-lg shadow-amber-600/25"
           >
