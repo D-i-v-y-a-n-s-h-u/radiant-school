@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import useReveal from "@/hooks/useReveal";
 
 const STEPS = [
@@ -51,7 +52,22 @@ export default function Admissions() {
         </div>
 
         {/* Enquiry form */}
-        <div data-reveal="right" className="card-premium rounded-[2rem] p-8 sm:p-10 h-fit lg:sticky lg:top-28">
+        <div data-reveal="right" className="relative overflow-hidden card-premium rounded-[2rem] p-8 sm:p-10 h-fit lg:sticky lg:top-28">
+          <Image
+          src="/school-that-cares.png"
+          alt=""
+          fill
+          aria-hidden="true"
+          className="
+            object-contain
+            p-16
+            opacity-[0.15]
+            dark:opacity-[0.15]
+            pointer-events-none
+            select-none
+          "
+          />
+          <div className="relative z-10"></div>
           <h3 className="font-display text-2xl font-semibold text-ink-950 dark:text-white">Book a Campus Visit</h3>
           <p className="mt-2 text-ink-950/60 dark:text-ink-300 text-sm">
             Share a few details and our admissions counsellor will reach out within 24 hours.
@@ -93,9 +109,9 @@ export default function Admissions() {
                 By submitting, you agree to be contacted regarding admissions.
               </p>
             </form>
-          )}
-        </div>
-      </div>
+           )}
+          </div>   {/* z-10 wrapper */}
+        </div>   {/* card */}
     </section>
   );
 }
