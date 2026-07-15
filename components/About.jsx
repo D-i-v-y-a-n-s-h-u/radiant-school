@@ -22,8 +22,8 @@ export default function About() {
         <div data-reveal="left" className="relative">
           <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-ink-950/10">
             <img
-              src="/images/about-campus.svg"
-              alt="Radiant International School campus courtyard"
+              src="/hero.jpg"
+              alt="Radiant International School campus"
               className="w-full h-[420px] sm:h-[520px] object-cover"
             />
           </div>

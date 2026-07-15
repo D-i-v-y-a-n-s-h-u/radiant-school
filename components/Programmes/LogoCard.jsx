@@ -11,53 +11,63 @@ import Image from "next/image";
 export default function LogoCard({
   name,
   image,
-  active = false,
+  priority = false,
   ...rest
 }) {
   return (
     <div
       {...rest}
-className={`
-            group relative flex h-40 w-72 shrink-0 items-center justify-center
-            rounded-2xl border border-amber-100 bg-white p-5
-            shadow-md shadow-amber-950/5
-            transition-all duration-500 ease-out will-change-transform
+className="
+group
+relative
+flex
+h-24 w-36
+sm:h-28 sm:w-44
+md:h-32 md:w-52
+lg:h-36 lg:w-60
+shrink-0
+items-center
+justify-center
 
-          ${
-            active
-            ? "active-logo -translate-y-2 scale-[1.03] rotate-[1deg] border-amber-300 shadow-2xl shadow-amber-400/30"
-            : ""
-          }
+rounded-2xl
+border
+border-neutral-200
+dark:border-neutral-700
 
-            hover:-translate-y-2
-            hover:rotate-[1deg]
-            hover:shadow-2xl
-            hover:shadow-amber-400/25
-            hover:border-amber-200
+bg-white
+dark:bg-neutral-900
 
-            dark:border-white/10
-            dark:bg-neutral-900
-            dark:shadow-black/30
-            dark:hover:shadow-black/50
-            dark:hover:border-amber-500/30
+p-4
 
-            sm:h-44 sm:w-80
-            lg:h-48 lg:w-96
-            `}
+shadow-sm
+hover:shadow-xl
+
+transition-transform
+transition-shadow
+transition-colors
+duration-300
+ease-out
+
+hover:-translate-y-2
+hover:border-amber-300
+"
     >
       <div className="relative h-full w-full">
         <Image
-          src={image}
-          alt={name}
-          fill
-          sizes="(max-width: 640px) 224px, 256px"
-          className={`
-                      object-contain
-                      transition-transform duration-700 ease-out
-                      group-hover:scale-110
-                      ${active ? "scale-110" : ""}
-                    `}
-        />
+  src={image}
+  alt={name}
+  fill
+  priority={priority}
+  loading={priority ? "eager" : "lazy"}
+  sizes="(max-width:768px) 176px, 240px"
+  className="
+    object-contain
+    p-2
+    transition-transform
+    duration-300
+    group-hover:scale-105
+  "
+/>
       </div>
 
       {/* Accessible label, visually hidden but present for SEO / screen readers */}

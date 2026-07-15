@@ -39,7 +39,6 @@
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-slow: float 9s ease-in-out infinite;
   --animate-glow: glow 3s ease-in-out infinite;
-  --animate-marquee: marquee 32s linear infinite;
 }
 
 /* --------------------------------------------------------------------------
@@ -116,13 +115,14 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
   [data-reveal] {
     opacity: 1 !important;
     transform: none !important;
-  }
-  * {
-    animation-duration: 0.001ms !important;
-    transition-duration: 0.001ms !important;
   }
 }
 
@@ -157,10 +157,7 @@ body {
   0%, 100% { opacity: 0.55; }
   50% { opacity: 1; }
 }
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
+
 
 /* --------------------------------------------------------------------------
    Reusable utility classes
@@ -222,63 +219,4 @@ body {
 .section-eyebrow {
   letter-spacing: 0.18em;
 }
-.marquee-track {
-  animation: marquee-scroll 45s linear infinite;
-  will-change: transform;
-}
 
-@keyframes marquee-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* ============================================================
-   Premium Active Logo Animation
-============================================================ */
-
-@keyframes logoPulse {
-
-  0%{
-    transform:translateY(0) scale(1);
-    filter:brightness(1);
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-  }
-
-  20%{
-    transform:translateY(-10px) scale(1.05);
-    filter:brightness(1.15);
-    box-shadow:0 18px 42px rgba(245,158,11,.30);
-  }
-
-  45%{
-    transform:translateY(-7px) scale(1.03);
-    filter:brightness(1.08);
-    box-shadow:0 14px 34px rgba(245,158,11,.24);
-  }
-
-  70%{
-    transform:translateY(-4px) scale(1.01);
-    filter:brightness(1.03);
-  }
-
-  100%{
-    transform:translateY(0) scale(1);
-    filter:brightness(1);
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-  }
-
-}
-
-.active-logo{
-  animation:logoPulse 1.4s cubic-bezier(.23,1,.32,1);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-  }
-}
