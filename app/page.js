@@ -6,7 +6,8 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Academics from "@/components/Academics";
 import Facilities from "@/components/Facilities";
 import GallerySection from "@/components/Gallery/GallerySection";
-import ProgrammesSection from "@/components/Programmes/ProgrammesSection"; 
+import ProgrammesSection from "@/components/Programmes/ProgrammesSection";
+import LeadershipSection from "@/components/Leadership/LeadershipSection"; 
 import Testimonials from "@/components/Testimonials";
 import Admissions from "@/components/Admissions";
 import Contact from "@/components/Contact";
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <About />
+      <LeadershipSection />
       <WhyChooseUs />
       <Academics />
       <Facilities />
