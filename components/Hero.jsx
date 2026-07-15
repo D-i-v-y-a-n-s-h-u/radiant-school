@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden">
@@ -7,14 +9,49 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
         style={{ backgroundImage: "url('/images/hero-campus.svg')" }}
+
+      />
+      {/* School Sketch */}
+      <Image
+         src="/image/hero(background).png"
+         alt=""
+         fill
+         priority
+         className="
+           absolute
+           inset-0
+           object-cover 
+           object-[60%_center]
+           pointer-events-none
+           select-none
+           opacity-[45]
+           dark:opacity-[55]
+           scale-105
+           animate-float-slow
+        "
       />
       {/* Dark gradient overlay for legibility */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/40" />
 
       {/* Floating decorative gradients */}
       <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-amber-500/30 blur-[100px] animate-float-slow" />
       <div className="absolute bottom-10 right-0 h-[28rem] w-[28rem] rounded-full bg-amber-600/20 blur-[120px] animate-float" />
       <div className="absolute top-1/3 right-1/4 h-40 w-40 rounded-full bg-amber-400/20 blur-3xl animate-glow" />
+      
+      <div
+  className="
+    absolute
+    right-0
+    top-1/2
+    -translate-y-1/2
+    h-[650px]
+    w-[650px]
+    rounded-full
+    bg-amber-500/10
+    blur-[140px]
+    pointer-events-none
+  "
+/>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-40 w-full">
