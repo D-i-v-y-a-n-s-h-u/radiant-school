@@ -38,7 +38,10 @@ const LEADERS = [
 
 export default function LeadershipSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 sm:py-28 lg:py-32 dark:bg-neutral-950">
+    <section
+  id="leadership"
+  className="relative overflow-hidden bg-white py-24 sm:py-28 lg:py-32 dark:bg-neutral-950"
+>
       {/* Soft amber radial glow behind the middle card */}
       <div
         aria-hidden="true"

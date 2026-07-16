@@ -57,16 +57,58 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-40 w-full">
         <div className="max-w-3xl">
           {/* Admissions badge */}
-          <div
-            className="inline-flex items-center gap-2 rounded-full glass px-4 py-2 text-xs font-semibold tracking-wide text-amber-100 animate-fade-in"
-            style={{ animationDelay: "0.1s", opacity: 0 }}
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400" />
-            </span>
-            Admissions Open — Academic Year 2026&ndash;27
-          </div>
+<a
+  href="https://forms.edunexttechnologies.com/forms/radiant/application/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    group
+    inline-flex
+    items-center
+    gap-2
+    rounded-full
+    glass
+    px-4
+    py-2
+    sm:px-5
+    text-xs
+    sm:text-sm
+    font-semibold
+    tracking-wide
+    text-amber-100
+    animate-fade-in
+    transition-all
+    duration-300
+    hover:scale-105
+    hover:bg-amber-500/15
+    hover:shadow-lg
+    hover:shadow-amber-500/20
+    cursor-pointer
+  "
+  style={{ animationDelay: "0.1s", opacity: 0 }}
+>
+  <span className="relative flex h-2 w-2">
+    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
+    <span className="relative inline-flex h-2 w-2 rounded-full bg-amber-400" />
+  </span>
+
+  <span>Admissions Open • Academic Year 2026–27</span>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M13 5l7 7-7 7M5 12h15"
+    />
+  </svg>
+</a>
 
           <h1
             className="mt-7 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] font-semibold text-white animate-fade-up"

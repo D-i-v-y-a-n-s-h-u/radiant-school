@@ -21,7 +21,9 @@ export default function Facilities() {
   const ref = useReveal();
 
   return (
-    <section id="facilities" ref={ref} className="relative bg-amber-50/40 dark:bg-ink-900/30 py-28 lg:py-36">
+    <section
+      id="facilities"
+      className="relative bg-amber-50/40 dark:bg-ink-900/30 py-28 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl" data-reveal="up">
           <p className="section-eyebrow text-amber-600 font-semibold uppercase text-xs">Campus Facilities</p>
