@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
-  { label: "Academics", href: "#academics" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Academics", href: "/#academics" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 /**
@@ -20,6 +21,8 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [admissionOpen, setAdmissionOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -38,15 +41,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "glass shadow-[0_10px_40px_-15px_rgba(0,0,0,0.15)] py-3"
-          : "bg-transparent py-5"
-      }`}
+       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
+         scrolled || !isHome
+           ? "glass shadow-[0_10px_40px_-15px_rgba(0,0,0,0.15)] py-3"
+           : "bg-transparent py-5"
+       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
         {/* Brand */}
-        <a href="#top" className="flex items-center gap-3 group">
+        <a href="/" className="flex items-center gap-3 group">
           <div className="relative h-11 w-11 lg:h-12 lg:w-12 flex-shrink-0">
             <Image
               src="/logo.png"
@@ -59,14 +62,18 @@ export default function Navbar() {
           <div className="leading-tight">
             <p
               className={`font-display font-semibold text-lg tracking-tight transition-colors ${
-                scrolled ? "text-ink-950 dark:text-white" : "text-white"
+                scrolled || !isHome
+               ? "text-ink-950 dark:text-white"
+               : "text-white"
               }`}
             >
               Radiant International School
             </p>
             <p
               className={`text-[10px] uppercase tracking-[0.25em] transition-colors ${
-                scrolled ? "text-ink-950/75 dark:text-ink-300" : "text-white/90"
+                scrolled || !isHome
+               ? "text-ink-950/75 dark:text-ink-300"
+               : "text-white/90"
               }`}
             >
               2 Decades of Excellence in Education 
@@ -81,9 +88,9 @@ export default function Navbar() {
 
   <button
     className={`flex items-center gap-1 text-sm font-medium ${
-      scrolled
-        ? "text-ink-950/80 dark:text-ink-300 hover:text-amber-600"
-        : "text-white/90 hover:text-white"
+      scrolled || !isHome
+  ? "text-ink-950/80 dark:text-ink-300 hover:text-amber-600"
+  : "text-white/90 hover:text-white"
     }`}
   >
     About
@@ -149,9 +156,9 @@ export default function Navbar() {
       <a
         href={link.href}
         className={`relative text-sm font-medium tracking-wide pb-1 transition-colors group ${
-          scrolled
-            ? "text-ink-950/80 dark:text-ink-300 hover:text-amber-600"
-            : "text-white/90 hover:text-white"
+          scrolled || !isHome
+  ? "text-ink-950/80 dark:text-ink-300 hover:text-amber-600"
+  : "text-white/90 hover:text-white"
         }`}
       >
         {link.label}
@@ -164,9 +171,9 @@ export default function Navbar() {
   <li className="relative group">
     <button
       className={`flex items-center gap-1 text-sm font-medium transition-colors ${
-        scrolled
-          ? "text-ink-950/80 dark:text-ink-300 hover:text-amber-600"
-          : "text-white/90 hover:text-white"
+        scrolled || !isHome
+  ? "text-ink-950/80 dark:text-ink-300 hover:text-amber-600"
+  : "text-white/90 hover:text-white"
       }`}
     >
       Admissions
@@ -350,7 +357,7 @@ export default function Navbar() {
   </div>
 </div>
     <a
-      href="#academics"
+      href="/#academics"
       onClick={() => setMobileOpen(false)}
       className="py-3 text-lg font-medium text-ink-950 dark:text-white border-b border-ink-950/5 dark:border-white/10"
     >
@@ -358,7 +365,7 @@ export default function Navbar() {
     </a>
 
     <a
-      href="#gallery"
+      href="/#gallery"
       onClick={() => setMobileOpen(false)}
       className="py-3 text-lg font-medium text-ink-950 dark:text-white border-b border-ink-950/5 dark:border-white/10"
     >
@@ -409,7 +416,7 @@ export default function Navbar() {
         </a>
 
         <a
-          href="#admissions"
+          href="/#admissions"
           onClick={() => setMobileOpen(false)}
           className="block py-2 pl-5 pb-3 text-base text-ink-950/80 dark:text-white/80"
         >
@@ -419,7 +426,7 @@ export default function Navbar() {
     </div>
 
     <a
-      href="#contact"
+      href="/#contact"
       onClick={() => setMobileOpen(false)}
       className="py-3 text-lg font-medium text-ink-950 dark:text-white border-b border-ink-950/5 dark:border-white/10"
     >
