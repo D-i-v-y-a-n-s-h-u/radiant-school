@@ -32,19 +32,19 @@ const GALLERY_ITEMS = [
   { id: 16, title: "Internatinal Basketball Court", category: "Academics", src: "/Gallery/international-basketball-court/court-2.jpg" },
   { id: 17, title: "Internatinal Basketball Court", category: "Academics", src: "/Gallery/international-basketball-court/court-3.jpg" },
   { id: 18, title: "Internatinal Basketball Court", category: "Academics", src: "/Gallery/international-basketball-court/court-4.jpg" },
-  { id: 19, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling.jpeg", tall: true },
-  { id: 20, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-1.jpeg", tall: true },
-  { id: 21, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-2.jpeg", tall: true },
-  { id: 22, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-3.jpeg", tall: true },
-  { id: 23, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-4.jpeg", tall: true },
-  { id: 24, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth.jpg" },
-  { id: 25, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-1.jpg" },
-  { id: 26, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-2.jpg" },
-  { id: 27, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-3.jpg" },
-  { id: 28, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-4.jpg" },
-  { id: 29, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-5.jpg" },
-  { id: 30, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-6.jpg" },
-  { id: 31, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-7.jpg" },
+  { id: 19, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling.jpg", tall: true },
+  { id: 20, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-1.jpg", tall: true },
+  { id: 21, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-2.jpg", tall: true },
+  { id: 22, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-3.jpg", tall: true },
+  { id: 23, title: "Carrer Mela", category: "Academics", src: "/Gallery/carrer-mela/counselling-4.jpg", tall: true },
+  { id: 24, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth.jpeg" },
+  { id: 25, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-1.jpeg" },
+  { id: 26, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-2.jpeg" },
+  { id: 27, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-3.jpeg" },
+  { id: 28, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-4.jpeg" },
+  { id: 29, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-5.jpeg" },
+  { id: 30, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-6.jpeg" },
+  { id: 31, title: "Earth's Day", category: "Celebrations", src: "/Gallery/earth-day/earth-7.jpeg" },
   { id: 32, title: "Environment Day", category: "Celebrations", src: "/Gallery/environment-day/environment.jpg" },
   { id: 33, title: "Environment Day", category: "Celebrations", src: "/Gallery/environment-day/environment-1.jpg" },
   { id: 34, title: "Environment Day", category: "Celebrations", src: "/Gallery/environment-day/environment-2.jpg" },
@@ -52,15 +52,15 @@ const GALLERY_ITEMS = [
   { id: 36, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour.jpg" },
   { id: 37, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-1.jpg" },
   { id: 38, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-2.jpg" },
-  { id: 39, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-3.jpg" },
-  { id: 40, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-4.jpg" },
-  { id: 41, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-5.jpg" },
-  { id: 42, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-6.jpg" },
-  { id: 43, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-7.jpg" },
-  { id: 44, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-8.jpg" },
-  { id: 45, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-9.jpg" },
-  { id: 46, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-10.jpg" },
-  { id: 47, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-11.jpg" },
+  { id: 39, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-3.jpeg" },
+  { id: 40, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-4.jpeg" },
+  { id: 41, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-5.jpeg" },
+  { id: 42, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-6.jpeg" },
+  { id: 43, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-7.jpeg" },
+  { id: 44, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-8.jpeg" },
+  { id: 45, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-9.jpeg" },
+  { id: 46, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-10.jpeg" },
+  { id: 47, title: "Labour's Day", category: "Celebrations", src: "/Gallery/labour-day/labour-11.jpeg" },
   { id: 48, title: "Yoga Day", category: "Celebrations", src: "/Gallery/yoga-day/yoga-day.jpg", tall: true },
   { id: 49, title: "Yoga Day", category: "Celebrations", src: "/Gallery/yoga-day/yoga-day-1.jpg", tall: true },
   { id: 50, title: "Yoga Day", category: "Celebrations", src: "/Gallery/yoga-day/yoga-day-2.jpg", tall: true },
@@ -82,21 +82,21 @@ const GALLERY_ITEMS = [
   { id: 66, title: "Matrix Award", category: "Awards & Ceremony", src: "/Gallery/matrix/matrix-3.jpeg", tall: true },
   { id: 67, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc.jpg" },
   { id: 68, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-1.jpg" },
-  { id: 69, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-2.jpg" },
-  { id: 70, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-3.jpg" },
-  { id: 71, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-4.jpg" },
-  { id: 72, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-5.jpg" },
-  { id: 73, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-6.jpg" },
-  { id: 74, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra.jpg" },
-  { id: 75, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-1.jpg" },
-  { id: 76, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-2.jpg" },
-  { id: 77, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-3.jpg" },
-  { id: 78, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-4.jpg" },
-  { id: 79, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-5.jpg" },
-  { id: 80, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-6.jpg" },
-  { id: 81, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-7.jpg" },
-  { id: 82, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-8.jpg" },
-  { id: 83, title: "Extra Activities", category: "Academics", src: "/Gallery/exta-activities/extra-9.jpg" },
+  { id: 69, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-2.jpeg" },
+  { id: 70, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-3.jpeg" },
+  { id: 71, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-4.jpeg" },
+  { id: 72, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-5.jpeg" },
+  { id: 73, title: "NCC", category: "Academics", src: "/Gallery/ncc/ncc-6.jpeg" },
+  { id: 74, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra.jpeg" },
+  { id: 75, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-1.jpeg" },
+  { id: 76, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-2.jpeg" },
+  { id: 77, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-3.jpeg" },
+  { id: 78, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-4.jpeg" },
+  { id: 79, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-5.jpeg" },
+  { id: 80, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-6.jpeg" },
+  { id: 81, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-7.jpeg" },
+  { id: 82, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-8.jpeg" },
+  { id: 83, title: "Extra Activities", category: "Academics", src: "/Gallery/extra-activities/extra-9.jpeg" },
   { id: 84, title: "ICAR", category: "Tour", src: "/Gallery/tour/icar.jpg" },
   { id: 85, title: "ICAR", category: "Tour", src: "/Gallery/tour/icar-1.jpg" },
   { id: 86, title: "Indira Gandhi Planetarium", category: "Tour", src: "/Gallery/tour/indira-gandhi-planetarium.jpg", tall: true },
@@ -104,13 +104,13 @@ const GALLERY_ITEMS = [
   { id: 88, title: "Indira Gandhi Planetarium", category: "Tour", src: "/Gallery/tour/indira-gandhi-planetarium-2.jpg", tall: true },
   { id: 89, title: "Mahabodhi Temple", category: "Tour", src: "/Gallery/tour/mahabodhi-temple.jpg", tall: true },
   { id: 90, title: "Mahabodhi Temple", category: "Tour", src: "/Gallery/tour/mahabodhi-temple-1.jpg", tall: true },
-  { id: 91, title: "Mahabodhi Temple", category: "Tour", src: "/Gallery/tour/mahabodhi-temple-2.jpg", tall: true },
+  { id: 91, title: "Mahabodhi Temple", category: "Tour", src: "/Gallery/tour/mahabodhi-temple-2.jpg", },
   { id: 92, title: "Rajgir", category: "Tour", src: "/Gallery/tour/rajgir.jpg", tall: true },
   { id: 93, title: "Rajgir", category: "Tour", src: "/Gallery/tour/rajgir-1.jpg", tall: true },
   { id: 94, title: "Business Award", category: "Awards & Ceremony", src: "/Gallery/1.jpg" },
   { id: 95, title: "Our Champions", category: "Awards & Ceremony", src: "/Gallery/2.jpg" },
   { id: 96, title: "ULLA:The Annual Fete", category: "Celebrations", src: "/Gallery/ullas-the-annual-fete.jpg" },
-  { id: 97, title: "Blood Donation Camp", category: "Academics", src: "/Gallery/blood-donation-camp.jpg" },
+  { id: 97, title: "Blood Donation Camp", category: "Academics", src: "/Gallery/blood-donation-camp.jpeg" },
 ];
 
 const STATS = [
@@ -338,7 +338,7 @@ export default function GalleryPage() {
       {/* ---------------------------------------------------------------- */}
       <section className="relative flex h-[80vh] min-h-[560px] w-full items-center justify-center overflow-hidden">
         <Image
-          src="/gallery/hero-bg.jpg"
+          src="/image/hero(background).png"
           alt="Radiant International School campus"
           fill
           priority
@@ -506,13 +506,15 @@ export default function GalleryPage() {
       {/* ---------------------------------------------------------------- */}
       {/* LIGHTBOX                                                         */}
       {/* ---------------------------------------------------------------- */}
-      <Lightbox
+ {lightboxIndex !== null && (
+    <Lightbox
         items={filteredItems}
         activeIndex={lightboxIndex}
         onClose={closeLightbox}
         onNext={nextImage}
         onPrev={prevImage}
-      />
+    />
+)}
     </main>
       <Footer />
   </>
