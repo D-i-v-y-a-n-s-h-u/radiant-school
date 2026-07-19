@@ -6,6 +6,7 @@ import useReveal from "@/hooks/useReveal";
 import GalleryCarousel from "./GalleryCarousel";
 import GalleryLightbox from "./GalleryLightbox";
 import galleryData from "./galleryData";
+import Link from "next/link";
 
 /**
  * Homepage Gallery preview section.
@@ -25,6 +26,7 @@ export default function GallerySection() {
 
   return (
     <section
+       id="gallery"
         ref={ref}
         className="relative bg-white dark:bg-ink-950 py-28 lg:py-36"
     >
@@ -67,21 +69,20 @@ export default function GallerySection() {
          className="mt-14 flex justify-center px-4"
          data-reveal="up"
       >
-        <button
-          type="button"
-          className="
-            inline-flex items-center gap-2 rounded-full
-            bg-amber-500 hover:bg-amber-600
-            text-white font-medium
-            px-7 py-3 sm:px-8 sm:py-3.5
-            shadow-md shadow-amber-500/20
-            transition-all duration-300
-            hover:shadow-lg hover:shadow-amber-500/30 hover:-translate-y-0.5
-            focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2
+        <Link
+  href="/gallery"
+  className="
+             inline-flex items-center gap-2 rounded-full
+             bg-amber-500 hover:bg-amber-600
+             text-white font-medium
+             px-7 py-3 sm:px-8 sm:py-3.5
+             shadow-md shadow-amber-500/20
+             transition-all duration-300
+             hover:shadow-lg hover:shadow-amber-500/30 hover:-translate-y-0.5
           "
         >
-          View Full Gallery →
-        </button>
+            View Full Gallery →
+        </Link>
       </div>
 
       {lightboxIndex !== null && (
