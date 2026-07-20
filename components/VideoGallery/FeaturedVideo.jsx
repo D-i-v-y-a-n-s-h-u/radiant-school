@@ -19,7 +19,7 @@ export default function FeaturedVideo({ video, onPlay }) {
       >
         <div className="relative aspect-video w-full">
           <Image
-            src={video.thumbnail}
+            src={`https://i.ytimg.com/vi/${video.youtubeId}/maxresdefault.jpg`}
             alt={video.title}
             fill
             priority

@@ -7,6 +7,7 @@ import Academics from "@/components/Academics";
 import Facilities from "@/components/Facilities";
 import GallerySection from "@/components/Gallery/GallerySection";
 import ProgrammesSection from "@/components/Programmes/ProgrammesSection";
+import InstitutionNetwork from "@/components/InstitutionNetwork";
 import LeadershipSection from "@/components/Leadership/LeadershipSection"; 
 import Testimonials from "@/components/Testimonials";
 import Admissions from "@/components/Admissions";
@@ -26,8 +27,9 @@ export default function Home() {
       <Facilities />
       <GallerySection />
       <ProgrammesSection />
-      <Testimonials />
-      <Admissions />
+      <InstitutionNetwork />
+     { /* <Testimonials />  */}
+     { /* <Admissions /> */}
       <Contact />
       <Footer />
     </main>

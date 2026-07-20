@@ -21,7 +21,10 @@ function VideoCard({ video, onPlay, index }) {
       >
         <div className="relative aspect-video w-full overflow-hidden">
           <Image
-            src={video.thumbnail}
+            src={
+              video.thumbnail ??
+             `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`
+            }
             alt={video.title}
             fill
             loading="lazy"
