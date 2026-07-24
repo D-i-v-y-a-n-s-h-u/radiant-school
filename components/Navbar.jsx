@@ -6,7 +6,6 @@ import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
-  { label: "Academics", href: "/#academics" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -16,6 +15,7 @@ const LINKS = [
  */
 
 export default function Navbar() {
+  const [academicsOpen, setAcademicsOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -146,6 +146,52 @@ useEffect(() => {
       className="block px-5 py-3 hover:bg-amber-500/10"
     >
       📖 Facilities Information
+    </a>
+
+  </div>
+
+</li>
+
+<li className="relative group">
+
+  <button
+    className={`flex items-center gap-1 text-sm font-medium ${
+      scrolled || !isHome
+        ? "text-ink-950/80 dark:text-ink-300 hover:text-amber-600"
+        : "text-white/90 hover:text-white"
+    }`}
+  >
+    Academics
+
+    <svg
+      className="h-4 w-4 transition-transform group-hover:rotate-180"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+
+  <div className="absolute left-0 mt-3 w-72 rounded-2xl glass shadow-xl opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 overflow-hidden">
+
+    <a
+      href="/#academics"
+      className="block px-5 py-4 hover:bg-amber-500/10"
+    >
+      🎓 Academic Excellence
+    </a>
+
+    <a
+      href="/downloads"
+      className="block px-5 py-4 hover:bg-amber-500/10"
+    >
+      📥 Download Centre
     </a>
 
   </div>
@@ -412,13 +458,48 @@ className="block px-5 py-4 hover:bg-amber-500/10"
     </a>
   </div>
 </div>
+<div className="border-b border-ink-950/5 dark:border-white/10">
+
+  <button
+    onClick={() => setGalleryOpen(!galleryOpen)}
+    className="flex w-full items-center justify-between py-3 text-lg font-medium text-ink-950 dark:text-white"
+  >
+    Academics
+
+    <span
+      className={`transition-transform duration-300 ${
+        galleryOpen ? "rotate-180" : ""
+      }`}
+    >
+      ▼
+    </span>
+  </button>
+
+  <div
+    className={`overflow-hidden transition-all duration-300 ${
+      galleryOpen ? "max-h-60" : "max-h-0"
+    }`}
+  >
+
     <a
       href="/#academics"
       onClick={() => setMobileOpen(false)}
-      className="py-3 text-lg font-medium text-ink-950 dark:text-white border-b border-ink-950/5 dark:border-white/10"
+      className="block py-2 pl-5 text-base"
     >
-      Academics
+      🎓 Academic Excellence
     </a>
+
+    <a
+      href="/downloads"
+      onClick={() => setMobileOpen(false)}
+      className="block py-2 pl-5 pb-3 text-base"
+    >
+      📥 Download Centre
+    </a>
+
+  </div>
+
+</div>
 
 <div className="border-b border-ink-950/5 dark:border-white/10">
 
